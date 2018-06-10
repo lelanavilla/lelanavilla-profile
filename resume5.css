@@ -1,0 +1,182 @@
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
+quote {
+    font-size: 3.875rem;
+    font-style: italic;
+    max-width: 50%;
+    font-weight: 100;
+    text-shadow: 0 0 3px black;
+}
+
+.cd-container {
+    width: 90%;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.cd-container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.cd-main-content {
+    height: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.cd-fixed-bg {
+    position: relative;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.words {
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-image: linear-gradient(to bottom right, rgba(10, 104, 157, 0.1), rgba(20, 217, 190, 0.15));
+}
+
+.adjust {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.adjust::before,
+.adjust::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+}
+
+.adjust::before {
+    z-index: 1;
+    background: teal;
+    mix-blend-mode: exclusion;
+}
+
+.adjust::after {
+    z-index: 2;
+    background: #0d35ff;
+    mix-blend-mode: difference;
+}
+
+.cd-bg-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: teal;
+    background-image: url("http://www.pixelstalk.net/wp-content/uploads/2016/10/Download-Free-Apollo-Wallpaper.jpg");
+    background-blend-mode: screen;
+    background-attachment: fixed;
+    background-position: 20% 40%;
+    background-size: cover;
+    filter: grayscale(1) contrast(0.9) brightness(0.8);
+    z-index: 1;
+}
+
+.cd-bg-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0a689d;
+    background-image: url("https://i.ytimg.com/vi/SM2KWCMrOYw/maxresdefault.jpg");
+    background-blend-mode: screen;
+    background-attachment: fixed;
+    background-size: cover;
+    filter: grayscale(1) contrast(0.9) brightness(0.8);
+    z-index: 1;
+}
+
+.cd-bg-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0a689d;
+    background-image: url("https://www.nasa.gov/sites/default/files/1961_may_alan_shepard_1.jpg");
+    background-blend-mode: screen;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+    filter: grayscale(1) contrast(0.9) brightness(0.8);
+}
+
+.cd-bg-4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0a689d;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/22/Seamans%2C_von_Braun_and_President_Kennedy_at_Cape_Canaveral_-_GPN-2000-001843.jpg");
+    background-blend-mode: screen;
+    background-attachment: fixed;
+    background-position: 50% 40%;
+    background-size: cover;
+    filter: grayscale(1) contrast(0.6) brightness(0.75);
+}
+
+h1.words,
+h2.words {
+    margin: 0;
+}
+
+.cd-fixed-bg {
+    background-attachment: fixed;
+}
+
+.cd-scrolling-bg {
+    position: relative;
+    min-height: 100%;
+    padding: 4em 0;
+    line-height: 1.6;
+    box-shadow: 0 2px 50px 0 rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    background-color: #fafefe;
+    color: #0a0e0e;
+}
+
+.achieve {
+    font-style: italic;
+    font-size: 19px;
+}
+
+.description {
+    font-weight: bold;
+}

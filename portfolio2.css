@@ -1,0 +1,229 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    color: #444;
+    background: #f9f9f9;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    padding: 200px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+section {
+    position: relative;
+    width: 100%;
+}
+
+
+/*##### HERO SECTION #####*/
+
+.hero {
+    height: 100%;
+    background: url('https://source.unsplash.com/a2NRu2Wxa2o/');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .content {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.hero .content .header {
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    text-align: center;
+    opacity: 0;
+}
+
+.hero .content .header h1 {
+    color: #fff;
+    font-size: 2.5em;
+    text-shadow: 0px 2px 3px #2d2d2d;
+}
+
+
+/*##### PORTFOLIO SECTION #####*/
+
+.project {
+    margin: 150px auto;
+    color: #fff;
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    overflow: hidden;
+}
+
+.portfolio {
+    background: #f9f9f9;
+    padding: 80px 0;
+}
+
+.portfolio .content {
+    text-align: center;
+}
+
+.portfolio .content h1 {
+    color: #3c3c3c;
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+.portfolio .content .projects {
+    width: 100%;
+}
+
+.portfolio .content .projects .project {
+    color: #fff;
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    overflow: hidden;
+}
+
+.portfolio .content .projects .project:last-child {
+    margin-bottom: 0;
+}
+
+.portfolio .content .projects .project {
+    width: 100%;
+}
+
+
+/* .project-img {
+    width: 350px;
+    height: 400px;
+    margin: 150px;
+} */
+
+.portfolio .content .projects .project .project-title {
+    color: #3c3c3c;
+    padding: 10px 0;
+}
+
+.portfolio .content .projects .project .project-description {
+    color: #444;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+.projects {
+    width: 100%;
+}
+
+.project last-child {}
+
+.project-image img {
+    width: 100%;
+}
+
+.project-title {
+    padding: 10px 0;
+}
+
+
+/* ############################
+ RESPONSIVE
+ ############################### */
+
+.portfolio .content .projects .project {
+    position: relative;
+    margin: auto;
+    margin-bottom: 3%;
+    width: 680px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.portfolio .content .projects .project:hover .project-image {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.portfolio .content .projects .project:hover .project-title,
+.portfolio .content .projects .project:hover .project-description {
+    opacity: 1;
+}
+
+.portfolio .content .projects .project .project-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.portfolio .content .projects .project .project-image img {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.portfolio .content .projects .project .project-title,
+.portfolio .content .projects .project .project-description {
+    position: absolute;
+    height: 50%;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+    overflow: hidden;
+}
+
+.portfolio .content .projects .project .project-title {
+    width: 50%;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    display: table;
+}
+
+.portfolio .content .projects .project .project-title h2 {
+    font-size: 2em;
+    text-decoration: underline;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.portfolio .content .projects .project .project-description {
+    width: 100%;
+    top: 50%;
+    left: 0;
+    padding: 25px 10px;
+    text-align: left;
+}
